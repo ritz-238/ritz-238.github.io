@@ -1,0 +1,319 @@
+body{
+    margin: 0px;
+    padding: 0% 15%;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.list{
+    display: none;
+    margin-right: 100px;
+}
+
+.list > ul{
+    margin: 0;
+    color: white;
+    list-style-type: square;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: crimson;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    padding: 15px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.links a:hover{
+    background-color: crimson;
+}
+
+.genres{
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    color: black;
+    width: 250px;
+    white-space: nowrap;
+    z-index: 0;
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
+.genres > ul{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.genres > ul > li{
+    list-style-type: square;
+    color: crimson;
+}
+
+#genres:hover .genres {display: block;}
+
+#other{
+    color: chartreuse;
+}
+
+#other:hover{
+    background-color: white;
+}
+
+.icons{
+    display: flex;
+    float: right;
+}
+
+.icons > a{
+    padding: 15px;
+}
+
+.icons > a:hover{
+    background-color: crimson;
+}
+
+.bar{
+    display: flex;
+    background-color: lightgrey;
+}
+
+.bar > img{
+    padding: 10px;
+}
+
+.bar > input{
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+    margin: 0.2% 0%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: lightgrey;
+}
+
+.bar > input::placeholder{
+    color: black;
+}
+
+.main{
+    display: flex;
+    padding-top: 30px;
+    background-color: white;
+}
+
+.deck{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.deck > hr{
+    width: 100%;
+    border: none;
+    background-color: crimson;
+    margin: 10px 15px;
+}
+
+.deck > p{
+    white-space: nowrap;
+    margin: 0;
+    font-size: larger;
+}
+
+.novels{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0px 10px;
+}
+
+.novels > hr{
+    margin: 0;
+}
+
+.nvl{
+    display: flex;
+    padding: 10px;
+    margin: 2px;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 20%;
+}
+
+.pic > img{
+    width: 8vw;
+    border: 0.1px solid black;
+}
+
+.intro{
+    width: 80%;
+}
+
+.intro > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    object-position: bottom;
+}
+
+.abt{
+    display: flex;
+}
+
+.abt > img{
+    height: 20px;
+    margin-right: 5px;
+}
+
+.abt > p{
+    margin: 0;
+    margin-right: 10px;
+    color: grey;
+}
+
+.cnt{
+    padding: 3px 10px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    width: 30%;
+}
+
+.novelist{
+    padding: 0px 10px;
+}
+
+#t1{
+    float: right;
+}
+
+.btn{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 4px;
+}
+
+.genrelist{
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: square;
+    color: crimson;
+}
+
+#txt{
+    color: black;
+}
+
+#t2{
+    float: right;
+    color: grey;
+}
+
+.comments > div{
+    margin: 10px 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile > img{
+    width: 3vw;
+    border-radius: 100%;
+}
+
+.box{
+    margin-left: 20px;
+    padding: 10px;
+    min-height: 5vw;
+    width: 100%;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+#txt1{
+    font-weight: bold;
+}
+
+#txt3{
+    color: grey;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        padding: 0% 5%;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .novels{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .trending{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .pic{
+        width: 10%;
+    }
+    .intro{
+        width: 90%;
+    }
+}

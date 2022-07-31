@@ -1,0 +1,56 @@
+.signup{
+    margin: 0;
+    width: 40%;
+    position: absolute;
+    left: 30%;
+}
+
+.head{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+p{
+    margin: 0;
+}
+
+.main{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.main form > input{
+    width: 100%;
+    padding: 7px;
+    margin: 10px 0px;
+}
+
+.btm{
+    background-color: lightgrey;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.btm > div{
+    padding: 10px;
+    text-align: center;
+}
+
+.btn{
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
